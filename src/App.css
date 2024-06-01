@@ -1,0 +1,227 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+.project-name .project-name:hover {
+  animation: flash 0.25s ;
+  scale: 1.05;
+  color: white;
+}
+
+@keyframes flash {
+  0% {
+    text-shadow: 0px 0px 30px #fff;
+  }
+  20% {
+    text-shadow: 0px 0px 0px transparent;
+  }
+  40% {
+    text-shadow: 0px 0px 20px #fff;
+  }
+  60% {
+    text-shadow: 0px 0px 0px transparent;
+  }
+  100% {
+    text-shadow: 0px 0px 50px #fff;
+  }
+}
+
+.weather-btn {
+  font-weight: 500;
+  border: none;
+  background-color: rgb(84, 141, 206);
+  border-radius: 12px;
+  height: 40px;
+  padding: 10px;
+  box-shadow: 3px 3px 0px 0px rgb(40, 78, 122);
+  cursor: pointer;
+}
+
+.weather-btn:hover {
+  font-weight: 600;
+  background-color: rgb(66, 116, 173);
+  box-shadow: 0px 0px 0px 0px rgb(40, 78, 122);
+  translate: 3px;
+}
+
+.weather-btn-disabled {
+  font-weight: 500;
+  border: none;
+  background-color: rgb(85, 107, 133);
+  border-radius: 12px;
+  height: 40px;
+  padding: 10px;
+  cursor: not-allowed;
+}
+
+.loading-screen {
+  opacity: 0.2;
+}
+.opaci {
+  background: linear-gradient(rgb(49, 49, 49) -15%, transparent 45%);
+  border-radius: 20px;
+}
+/* .weather-card {
+  min-width: 200px;
+  width: 50%;
+  height: auto;
+  background-size: contain;
+  border: 1px solid rgb(62, 62, 62);
+  border-radius: 20px;
+  margin: 0 auto;
+} */
+.loc-time {
+  filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.temp-deg {
+  filter: drop-shadow(0px 0px 2px rgb(39, 39, 39));
+  font-size: 48px;
+  /* text-align: left; */
+  padding-left: 15px;
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+}
+.temp-deg-type {
+  filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 20px;
+  margin-top: -70px;
+}
+.temps {
+  position: relative;
+  top: -20px;
+  left: -10px;
+  display: grid;
+  grid-template-columns: 100px 120px;
+  font-family: "poppins medium", sans-serif;
+}
+.advanced-stats {
+  position: relative;
+  top: -10px;
+  left: 10px;
+  display: flex;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    top: 0px;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 1;
+    top: 0px;
+  }
+  100% {
+    opacity: 0;
+    top: 0px;
+  }
+}
+
+.advanced-drop {
+  width: 50%;
+  min-width: 200px;
+  height: auto;
+  position: relative;
+  z-index: 0;
+  top: 0px;
+  background: rgb(19, 19, 19);
+  border-radius: 20px;
+  border: none;
+  margin: 0 auto;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+  overflow: auto;
+}
+.advanced-drop::-webkit-scrollbar {
+  display: none;
+}
+.open {
+  animation-name: slideDown;
+}
+.close {
+  animation-name: slideUp;
+}
+
+.forecast-drop {
+  width: 50%;
+  min-width: 200px;
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /* background: rgb(11, 11, 11); */
+  border-radius: 16px;
+  margin: 0 auto;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+  overflow-x: auto;
+  border: 2px solid #202020;
+}
+
+.forecast-title {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.forecast-drop::-webkit-scrollbar {
+  display: none;
+}
+@keyframes slideforeDown {
+  0% {
+    position: relative;
+    top: -50px;
+  }
+  100% {
+    position: relative;
+    top: 0px;
+  }
+}
+
+@keyframes slideforeUp {
+  0% {
+    position: relative;
+    top: 0px;
+  }
+  100% {
+    position: relative;
+    top: -50px;
+  }
+}
+.fore-open,
+.title-open {
+  animation-name: slideforeDown;
+}
+.fore-close,
+.title-close {
+  animation-name: slideforeUp;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  gap: 5px;
+  justify-content: space-around;
+  padding: 10px;
+}

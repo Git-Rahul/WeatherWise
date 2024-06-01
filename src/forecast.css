@@ -1,0 +1,22 @@
+.forecast-card {
+  color: #fff;
+  box-shadow:  7px 7px 14px #1e1e1e,
+  -6px -6px 12px #2b2b2b;
+  height:auto;
+  width: 140px;
+  font-size: 13px;
+  border-radius:15px;
+  padding:10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 5px;
+}
+.main-block{
+    display: flex;
+    width:max-content;
+    height:auto;
+
+}
+.main-block::-webkit-scrollbar{
+    display: none;
+}
