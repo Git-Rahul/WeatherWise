@@ -144,7 +144,7 @@ function App() {
         return rainbg;
       case "Overcast":
       case "Thundery outbreaks in nearby":
-        case "Thundery outbreaks possible":
+      case "Thundery outbreaks possible":
         return thunderstormbg;
       case "Clear":
       case "clear":

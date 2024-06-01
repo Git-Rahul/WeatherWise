@@ -38,8 +38,8 @@ function Forecast({ weatherData, formatdate }) {
                   {day.day.condition.text}
                   <br />
                   <div>
-                    H : {day.day.maxtemp_c}&#176;C &nbsp;&nbsp;
-                    L : {day.day.mintemp_c}&#176;C
+                    H : {day.day.maxtemp_c}&#176;C &nbsp;&nbsp; L :{" "}
+                    {day.day.mintemp_c}&#176;C
                   </div>
                 </div>
               </div>
