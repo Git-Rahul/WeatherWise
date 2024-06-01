@@ -3,10 +3,11 @@
   margin: 0 auto;
   padding: 1rem;
   text-align: center;
-  font-family: poppins;
+  font-family: "Poppins";
   background-color: #242424;
 }
-.project-name .project-name:hover {
+
+.project-name:hover {
   animation: flash 0.25s;
   scale: 1.05;
   color: white;
@@ -33,12 +34,12 @@
 .weather-btn {
   font-weight: 500;
   border: none;
-  background-color: rgb(84, 141, 206);
+  background-color: rgb(59, 138, 228);
   color: white;
   border-radius: 12px;
   height: 40px;
   padding: 10px;
-  box-shadow: 3px 3px 0px 0px rgb(40, 78, 122);
+  box-shadow: 3px 3px 0px 0px rgb(35, 91, 155);
   cursor: pointer;
 }
 
@@ -52,7 +53,7 @@
 .weather-btn-disabled {
   font-weight: 500;
   border: none;
-  background-color: rgb(85, 107, 133);
+  background-color: rgb(92, 103, 116);
   border-radius: 12px;
   height: 40px;
   padding: 10px;

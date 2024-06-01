@@ -141,6 +141,8 @@ function App() {
       case "Patchy rain nearby":
       case "Moderate rain":
       case "Heavy rain":
+      case "Moderate or heavy rain with thunder":
+      case "Patchy light rain with thunder":
         return rainbg;
       case "Overcast":
       case "Thundery outbreaks in nearby":
